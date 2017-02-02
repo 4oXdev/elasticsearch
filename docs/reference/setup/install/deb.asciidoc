@@ -18,11 +18,6 @@ or an open-source distribution such as http://openjdk.java.net[OpenJDK].
 
 include::key.asciidoc[]
 
-[source,sh]
--------------------------
-wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add -
--------------------------
-
 [[deb-repo]]
 ==== Installing from the APT repository
 
@@ -80,6 +75,13 @@ These instructions do not use `add-apt-repository` for several reasons:
     (Wrong sources.list entry or malformed file)
 
 ==================================================
+
+Download and install the public signing key:
+
+[source,sh]
+-------------------------
+wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add -
+-------------------------
 
 You can install the Elasticsearch Debian package with:
 
