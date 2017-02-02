@@ -81,6 +81,13 @@ These instructions do not use `add-apt-repository` for several reasons:
 
 ==================================================
 
+Download and install the public signing key:
+
+[source,sh]
+-------------------------
+wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add -
+-------------------------
+
 You can install the Elasticsearch Debian package with:
 
 [source,sh]
